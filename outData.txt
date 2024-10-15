@@ -1,0 +1,3 @@
+Sum of the integers is: 111
+The ASCII value of L is 76
+T-rex_More_Like_Trex
