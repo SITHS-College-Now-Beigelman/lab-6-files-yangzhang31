@@ -15,11 +15,9 @@ int main() {
     ofstream outFile; //output file stream variable
     int integer1, integer2; //variable to store the integers
     int integerSum; //variable to store the sum of the integers
-    char character; // variable to store the character
+    char character, newCharacter; // variable to store the character
     int charAscii; //variable to store the ascii value of the character
     string sentence; //variable to store the string
-
-    cout << "Program to review streams.....\n";
 
     inFile.open("inData.txt"); //Opens the file named "inData.txt"
     outFile.open("outData.txt"); //Opens the file named "outData.txt"
@@ -32,7 +30,8 @@ int main() {
 
     inFile >> character; //Gets the data for the char
     charAscii = character; //the int is equal to the char so the char transfers into the ASCII value
-    outFile << "The ASCII value of " << character << " is " << charAscii << endl;
+    newCharacter = charAscii + 1; //the ASCII value plus one equals the next char
+    outFile << "The letter that comes after " << character << " is " << newCharacter << endl;
 
     inFile >> sentence; //Gets the data for the string
     outFile << sentence << endl; //Outputs the string
